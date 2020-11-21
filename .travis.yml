@@ -21,6 +21,7 @@ after_success:
   - docker push leannelyons/multi-server
   - docker push leannelyons/multi-worker
 
+# Required if you want to deploy to AWS
     #deploy:
     #  provider: elasticbeanstalk
     #  region: us-west-1
@@ -31,5 +32,4 @@ after_success:
     #  on:
     #    branch: master
     #  access_key_id: $AWS_ACCESS_KEY
-    #  secret_access_key:
-    #    secure: $AWS_SECRET_KEY
+    #  secret_access_key: $AWS_SECRET_KEY
